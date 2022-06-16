@@ -2,3 +2,95 @@ html, body {
   height: 100%;
   width: 100%;
 }
+*{
+  font-size:16px}
+body{
+  margin:auto;
+  margin-top:100px;
+  width:100%;
+background-color:#0e0e0e;
+
+ }
+
+main{
+  width:100%;
+  margin:auto;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  background-color:hsl(0,100%,74%);
+  background-image:url(../images/bg-intro-desktop.png);
+  background-size:cover;
+  background-blend-mode:screen;
+}
+.learn{
+color:white;
+font-weight:bolder ;
+  
+}
+.topP{
+  font-size: 7.5px;
+  color:white;
+}
+.bottom-container{width:100%;
+                 box-sizing: border-box;}
+.first-btm-container {
+ box-sizing:border-box;
+  margin-top:100px;
+  margin-bottom:20px;
+  border-radius:10px;
+  width:100%;
+  background-color:hsl(248,32%,49%);
+     padding:10 20;}
+.first-btm-container .white{
+  color:white;
+  font-weight:bolder;
+  width:100%;
+}
+.first-btm-container .small{
+  color: white;
+  width:100%;
+  
+}
+form{
+  box-sizing:border-box;
+  width:250px;
+  background-color:white;
+  padding:20px 20px 20px 20px;
+}
+button{
+  width:100%;
+  color: white;
+  background-color:hsl(154,59%,51%);
+padding:10 20;
+  border:none;
+  border-radius:10px;
+
+}
+input{
+  width:100%;
+}
+.foot,.terms{
+  font-size:7px;
+}
+.foot{
+color:hsl(246,25%,77%);
+
+
+}
+.foot .terms{
+color:red;
+font-weight:bold;
+
+}
+.inp-class{
+  border-radius:5px;
+}
+.inp-class:invalid{
+ border:2px solid pink;
+  background-image:url(../images/icon-error.svg);
+background-repeat:no-repeat;
+background-position:center right;
+background-size:10px 10px;}
+
+
