@@ -1,4 +1,6 @@
-@import url(https://fonts.google.com/specimen/Poppins);
+.container{
+  display: flex;
+}
 html, body {
   height: 100%;
   width: 100%;
@@ -7,10 +9,6 @@ html, body {
   font-size:16px;
 box-sizing:border-box; 
 font-family:'Poppins',sans-serif,serif;}
-main{
-
-
-   }
 
 body{
   font-weight:400;
