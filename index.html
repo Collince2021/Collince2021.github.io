@@ -24,11 +24,12 @@
       <div class="second-btm-container">
         <form>
           <input type="text" 
-class="inp-class"  placeholder="Jonathan" required><br><br>
-        <input  id="lastname" class="inp-class  "type="text" placeholder="Last Name" required><br><br>
-         <input type="email" placeholder="Email Address" required class="email-class" ><br><br>
+class="inp-class"  placeholder="Jonathan" required>
+            <span class="erro">First Name cannot be empty</span>
+        <input  id="lastname" class="inp-class  "type="text" placeholder="Last Name" required><span class="erro">Last Name cannot be empty</span>
+         <input type="email" placeholder="Email Address" required class="inp-class" > <span class="erro">Looks like this is not an email</span>
                    <input type="password" 
-class="inp-class" placeholder="Password" required><br><br>
+class="inp-class" placeholder="Password" required> <span class="erro">Password cannot be empty</span>
           <button type="button">CLAIM YOUR FREE TRIAL</button><br><br><p class="foot">By clicking the button you are agreeing to our <span class="terms">Terms and Services</span>
           </p>   </form>
       

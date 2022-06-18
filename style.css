@@ -1,39 +1,57 @@
+@import url(https://fonts.google.com/specimen/Poppins);
 html, body {
   height: 100%;
   width: 100%;
 }
 *{
-  font-size:16px}
-body{
-  margin:auto;
-  margin-top:100px;
-  width:100%;
-background-color:#0e0e0e;
-
- }
-
+  font-size:16px;
+border-sizing:border-box; 
+font-family:'Poppins',sans-serif,serif;}
 main{
+  max-width: 1250px;;
+  margin:60px auto 0px;
+  padding:0px 30px;
+  height:100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+   }
+
+body{
+  font-weight:400;
   width:100%;
-  margin:auto;
-  display: flex;
-  justify-content:center;
-  align-items:center;
+  line-height:1.7;
+  color:#fff;
   background-color:hsl(0,100%,74%);
   background-image:url(../images/bg-intro-desktop.png);
   background-size:cover;
   background-blend-mode:screen;
+  border-sizing:border-box;
+  font-size:16px;
+  
 }
 .learn{
 color:white;
 font-weight:bolder ;
+  line-height:1.2;
+  margin-bottom:30px;
+   font-size:40px;
   
 }
 .topP{
-  font-size: 7.5px;
   color:white;
+  font-size:16 px;
 }
-.bottom-container{width:100%;
-                 box-sizing: border-box;}
+.bottom-container{
+                margin:20px auto;
+                 padding: 20px;
+                text-align:center;
+                 border-radius:10px;
+                  
+border:none;}
+.top-container{
+  margin:auto 30;
+}
 .first-btm-container {
  box-sizing:border-box;
   margin-top:100px;
@@ -41,7 +59,7 @@ font-weight:bolder ;
   border-radius:10px;
   width:100%;
   background-color:hsl(248,32%,49%);
-     padding:10 20;}
+     padding:20;}
 .first-btm-container .white{
   color:white;
   font-weight:bolder;
@@ -53,10 +71,11 @@ font-weight:bolder ;
   
 }
 form{
-  box-sizing:border-box;
-  width:250px;
+  border: radius 10px;;
+  border:none;
   background-color:white;
-  padding:20px 20px 20px 20px;
+  padding:20px;
+  margin:20px auto;
 }
 button{
   width:100%;
@@ -85,103 +104,45 @@ font-weight:bold;
 }
 .inp-class{
   border-radius:5px;
+  margin-top: 10px;
+  position:relative;
+  height: 40px;
+  }
+.erro{
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+  color:pink;
+  text-allign:right; 
+  font-weight:400;
 }
-.inp-class:invalid,.email-class:invalid{
+
+.inp-class:not(:placeholder-shown):invalid ~ .error:invalid{
  border:2px solid pink;
   background-image:url(../images/icon-error.svg);
 background-repeat:no-repeat;
 background-position:center right;
-background-size:10px 10px;}
-@media only screen  and(max-width:375px)
+background-size:10px 10px;
+display: block;
+visibility:visible;}
+@media only screen  and (max-width:375px)
 {
   html, body {
   height: 100%;
-  width: 100%;
-}
-*{
-  font-size:16px}
-body{
-  margin:auto;
-  margin-top:100px;
-  width:100%;
-background-color:#0e0e0e;
-
- }
-
-main{
-  width:100%;
-  margin:auto;
-  display: flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  align-items:center;
-  background-color:hsl(0,100%,74%);
-  background-image:url(../images/bg-intro-mobile.png);
-  background-size:cover;
-  background-blend-mode:screen;
-}
-.learn{
-color:white;
-font-weight:bolder ;
-  
-}
-.topP{
-  font-size: 7.5px;
-  color:white;
-}
-.bottom-container{width:100%;
-                 box-sizing: border-box;}
-.first-btm-container {
- box-sizing:border-box;
-  margin-top:100px;
-  margin-bottom:20px;
-  border-radius:10px;
-  width:100%;
-  background-color:hsl(248,32%,49%);
-     padding:10 20;}
-.first-btm-container .white{
-  color:white;
-  font-weight:bolder;
-  width:100%;
-}
-.first-btm-container .small{
-  color: white;
-  width:100%;
-  
-}
-form{
-  box-sizing:border-box;
-  width:250px;
-  background-color:white;
-  padding:20px 20px 20px 20px;
-}
-button{
-  width:100%;
-  color: white;
-  background-color:hsl(154,59%,51%);
-padding:10 20;
-  border:none;
-  border-radius:10px;
-font-size:10;
-}
-input{
-  width:100%;
-}
-.foot,.terms{
-  font-size:7px;
-}
-.foot{
-color:hsl(246,25%,77%);
-
-
-}
-.foot .terms{
-color:red;
-font-weight:bold;
-
-}
-.inp-class{
-  border-radius:5px;
+  width: 100%;}
+  body{
+    background-image:url(../images/bg-intro-mobile.png);
   }
+  main{
+    grid-template-columns:1fr;
+    grid-template-rows:repeat(2, 1fr);
+  }
+  .topP,.learn{
+    text: align center;;
+  }
+  .topP{
+    font-size:10px;
+    margin: top 20px;;
+  }
+  
 }
-
