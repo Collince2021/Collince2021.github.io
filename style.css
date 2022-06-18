@@ -1,23 +1,27 @@
-.container{
-  display: flex;
+
+  main
+{
+				display:flex;
+				justify-content:center;
+				align-items:center;
 }
 html, body {
   height: 100%;
   width: 100%;
 }
 *{
-  font-size:16px;
-box-sizing:border-box; 
+  font-size:16px ;
 font-family:'Poppins',sans-serif,serif;}
 
 body{
+max-width:1440px;
+display:flex;
   font-weight:400;
   width:100%;
   /*line-height:1.7;*/
   color:#fff;
   background-color:hsl(0,100%,74%);
-  background-image:url(../images/bg-intro-desktop.png);
-  background-size:cover;
+background-size:cover;
   background-blend-mode:screen;
   box-sizing:border-box;
   
@@ -28,36 +32,39 @@ color:white;
 font-weight:bolder ;
   /*line-height:1.2;*/
  /* margin-bottom:30px;*/
-   font-size:40px;
-  
+   
+  font: 30px;
 }
 .topP{
   color:white;
-  font-size:16 px;
+  /*font-size:16 px;*/
 }
 .bottom-container{
                /*margin-top:30px;*/
                /*margin-right:auto;*/
+  
                  padding: 20px;
                 text-align:center;
                  border-radius:10px;
+                 
                   
 border:none;}
 .top-container{
-  margin:auto 30;
+  height:20vh;
+  margin:auto 20px;
 }
 .first-btm-container {
- box-sizing:border-box;
-  /*margin-top:100px;
+  margin-top:100px;
   margin-bottom:20px;
-  border-radius:10px;*/
+  border-radius:10px;
   width:100%;
+  border-radius:5px;
   background-color:hsl(248,32%,49%);
      padding:20;}
 .first-btm-container .white{
   color:white;
   font-weight:bolder;
-  width:100%;
+  
 }
 .first-btm-container .small{
   color: white;
@@ -68,17 +75,17 @@ form{
   border: radius 10px;;
   border:none;
   background-color:white;
-  padding:20px;
-  margin:20px auto;
+  padding:10px;
+  /*margin:20px auto;*/
 }
 button{
   width:100%;
-  color: white;
+  color:#fffffe;
   background-color:hsl(154,59%,51%);
-padding:10 20;
+ padding:10 20;
   border:none;
   border-radius:10px;
-font-size:10;
+ font-size:10;
 }
 input{
   width:100%;
@@ -99,26 +106,9 @@ font-weight:bold;
 .inp-class{
   border-radius:5px;
   margin-top: 10px;
-  position:relative;
-  height: 40px;
+ /* position:relative;*/
+ /* height: 40px;*/
   }
-.erro{
-  visibility: hidden;
-  opacity: 0;
-  display: none;
-  color:pink;
-  text-allign:right; 
-  font-weight:400;
-}
-
-.inp-class:not(:placeholder-shown):invalid ~ .error:invalid{
- border:2px solid pink;
-  background-image:url(../images/icon-error.svg);
-background-repeat:no-repeat;
-background-position:center right;
-background-size:10px 10px;
-display: block;
-visibility:visible;}
 @media only screen  and (max-width:375px)
 {
   html, body {
